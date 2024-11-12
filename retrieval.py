@@ -24,12 +24,4 @@ def retrieve_and_answer(fetch_k=20, k=1, lambda_mult=0.3, query=''):
         }
     )
 
-    chain = RetrievalQA.from_chain_type(
-        llm=ChatOpenAI(model_name='gpt-4o-mini'),
-        chain_type='stuff',
-        retriever=retriever,
-    )
-
-    answer = chain.invoke(query)
-
-    return answer
+    return retriever
