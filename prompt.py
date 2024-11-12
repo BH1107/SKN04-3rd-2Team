@@ -12,22 +12,9 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.document_transformers import LongContextReorder
 
 
-def prompting(fetch_k=20, k=4, lambda_mult=0.3, question=''):
+def prompting(retriever, question=''):
     if question == '':
         question = 'MSI노트북 두개의 노트북 비교해서 그 중 하나를 추천해줘'
-
-    db = FAISS.load_local(
-        folder_path='./db',
-        index_name='faiss_index',
-        embeddings=OpenAIEmbeddings(model='text-embedding-3-small'),
-        allow_dangerous_deserialization=True
-    )
-
-    retriever = db.as_retriever(search_kwargs={
-        'fetch_k': fetch_k,
-        'k': k,
-        'lambda_mult': lambda_mult,
-    })
 
     template = ''' 
     너는 노트북 사양을 분석해서 알려주는 봇이다.
