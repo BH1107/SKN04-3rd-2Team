@@ -32,4 +32,4 @@ def retrieve_and_answer(fetch_k=20, k=1, lambda_mult=0.3, query=''):
 
     answer = chain.invoke(query)
 
-    print(answer)
+    return answer
