@@ -13,9 +13,6 @@ from langchain_community.document_transformers import LongContextReorder
 
 
 def prompting(retriever, question=''):
-    if question == '':
-        question = 'MSI노트북 두개의 노트북 비교해서 그 중 하나를 추천해줘'
-
     template = ''' 
     너는 노트북 사양을 분석해서 알려주는 봇이다.
     노트북에 관한 정보를 물어볼 때, 대답은 한글로 명확하고 자세히 알려줘.
