@@ -85,9 +85,9 @@ document 페이지 컨텐츠 정제, 메타 데이터 추가
 |--------------------|---------------------|
 | ![BeautifulSoup](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) <img src="https://img.shields.io/badge/langchain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"><img src="https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white">| ![streamlit](https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-## Requirements.txt
-### Usage
-**이 코드를 실행하기 위해 어떠한 코드를 어떻게 실행해야 하는지 작성**
+## Prerequisites
+
+
 
 cmd
 ```
@@ -99,6 +99,20 @@ pip install -r requirements.txt
   <img src="Images/env.png" alt="이미지 설명" width="1000" height="100">
 </p>
 .env 환경변수 파일 필요
+
+
+## Usage
+
+```cmd
+streamilt run streamlit.py 
+```
+
+임베딩된 데이터는 data/db 파일아래 존재, 임베딩이 필요하다면
+streamlit.py 에서 아래와 같은 코드의 주석을 제거하면 csv 파일을 임베딩 
+
+```python
+# laptop_data_to_faiss(csv_path, faiss_path)
+```
 
 ## System Architecture
 
