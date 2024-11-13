@@ -51,7 +51,5 @@ def prompting(retriever, question=''):
             'language': '한국어',
         }
     )
-    print(reference)
-
-load_dotenv()
-prompting()
+    
+    return reference
