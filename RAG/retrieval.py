@@ -3,7 +3,7 @@ from langchain_community.vectorstores import FAISS
 
 
 # retriever 검색세팅
-def retrieve_and_answer(faiss_path, fetch_k=20, k=3, lambda_mult=0.3):
+def retrieve_and_answer(faiss_path, fetch_k=20, k=1, lambda_mult=0.3):
     db = FAISS.load_local(
         folder_path=faiss_path,
         index_name='faiss_index',
