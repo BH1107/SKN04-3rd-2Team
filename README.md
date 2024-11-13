@@ -1,94 +1,104 @@
-# 👑Class Dom👑
-<p align="center"><img src="./classdom/image/classdom.jpg" width="1000" height="300"/></p>
-
-<hr>
-
-### 🤗 팀명 : 꿈은 거창하게
+# 🤗 팀명 : 병헌이 구른다
  
 ### 🤭 팀원
 
 <p align="center">
-	<img src="./classdom/image/min.jpg" width="200" height="200"/>
-	<img src="./classdom/image/seung.jpg" width="200" height="200"/>
-	<img src="./classdom/image/su.jpg" width="200" height="200"/>
-	<img src="./classdom/image/hye.jpg" width="200" height="200"/>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://pbs.twimg.com/media/D07FPC9WwAYZ1k1.jpg" width="160" height="160"/><br>김정훈 [팀장]
+      </td>
+      <td align="center">
+        <img src="https://upload3.inven.co.kr/upload/2020/04/15/bbs/i13843617916.jpg" width="160" height="160"/><br>김효은
+      </td>
+      <td align="center">
+        <img src="https://i.namu.wiki/i/CFdrduUAhyuiXzPMZ-WKsUJtGCuWOvzYLcIAdrcjZ2D7x4q3W1TxkGIYmBKTohKEM1vUNtgeZtilVHwCe2q17g.webp" width="160" height="160"/><br>박병헌
+      </td>
+      <td align="center">
+        <img src="https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon4895.jpg?image=e_upscale,q_auto:good,f_webp,w_auto&v=1729058249" width="160" height="160"/><br>오종수
+      </td>
+      <td align="center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-N5LKksvNwRIUWWcxuqWD2s52XO84KSOtdg&s" width="160" height="160"/><br>이지수
+      </td>
+    </tr>
+  </table>
 </p>
 
-<div align="center">
-	
-|   &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; 🐶 김민성  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;    |      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp; 🐱신승현  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;    |      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp; 🐹김수연  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;    |     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp; 🐰이혜진B  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;   | 
-|------------------------------------------|--------------------------------------|------------------------------------------|-----------------------------------|
- 
-</div>
+### 💼 역할 분담
 
-<hr>
+### 👨‍💻 김정훈
+- **데이터 전처리**: 원본 데이터를 분석하고, 모델에 적합한 형태로 변환했습니다.
+- **Retriever 구성**: FAISS 기반의 문서 검색기를 구성했습니다.
+- **Prompt 작성**: 사용자의 질문에 대한 적절한 답변을 생성하기 위한 프롬프트를 설계했습니다.
+- **Streamlit 페이지 구성 및 리드미 작성**: Streamlit을 활용한 웹 인터페이스 구현 및 프로젝트 리드미를 작성했습니다.
 
-### 👨‍🏫 프로젝트 개요
-  
+### 👨‍💻 박병헌
+- **데이터 전처리**: 데이터를 정리하고, 분석에 필요한 형식으로 준비했습니다.
+- **Retriever 구성**: 문서 검색을 위한 FAISS 기반 검색기를 구성했습니다.
 
-<hr>
+### 👩‍💻 이지수
+- **데이터 전처리**: 데이터 분석 및 클렌징 작업을 진행했습니다.
+- **Retriever 구성**: FAISS로 데이터를 효과적으로 검색할 수 있도록 구현했습니다.
+- **Prompt 작성**: 사용자의 질문에 적합한 응답을 도출하기 위한 프롬프트를 작성했습니다.
 
-### 👩‍🏫 프로젝트 목표
+### 👨‍💻 오종수
+- **Streamlit 페이지 구성**: 사용자와의 인터페이스 역할을 하는 웹 페이지를 구현했습니다.
+- **리드미 작성**: 프로젝트 진행 방식, 각 구성 요소 설명 등을 포함한 리드미를 작성했습니다.
+
+---
+
+## 프로젝트 개요
+**문제정의 : 할루시네이션 없는 컴퓨터 비교 챗봇을 만들고 싶다**
+ChatGPT에게 노트북 추천을 요청하면 할루시네이션이 있는 내용을 계속 출력하여 사용자에게 필요한 정보를 제공 받지 못하는 점이 이 프로젝트의 주요 이슈였습니다.
+
+예시) "https://cdn.discordapp.com/attachments/1305355347958956047/1306139608098017312/image.png?ex=673594cd&is=6734434d&hm=73bf6d5423451d7ccc5ccbc9f945ae937e9ccce64a6a991e57007ba347544976&"
 
 
 
-<hr>
 
-### 🔨 기술 스택
-<div>
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
-</div>
 
-<hr>
+이 프로젝트는 다나와 사이트에서 노트북 제품 정보를 **크롤링**하여, 사용자가 입력하는 질문에 대해 적절한 답변을 제공하는 **대화형 챗봇** 시스템을 구축하는 것입니다.
+본 시스템은 **RAG(Retrieval-Augmented Generation)** 방법론을 기반으로 하여, 실시간으로 사용자가 원하는 제품 정보를 정확하게 제공할 수 있도록 설계되었습니다.
 
-### Prerequisites
-**이 프로젝트를 실행하기 위해 필요한 패키지 등을 정의**
 
-```cmd
-pip install -r requirements.txt
+---
+
+## 기술 스텍
+
+| Data Modeling | Front-End |
+|--------------------|---------------------|
+| ![BeautifulSoup](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) <img src="https://img.shields.io/badge/langchain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"><img src="https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white">| ![streamlit](https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+<br><br>
+
+---
+## 폴더트리
 ```
 
-<hr>
-
-### Usage
-**이 코드를 실행하기 위해 어떠한 코드를 어떻게 실행해야 하는지 작성**
-
-```cmd
-python main.py
+│  .env
+│  .gitignore
+│  laptops_data.csv
+│  main.py
+│  README.md
+│  streamlit.py
+│
+├─crawlingAndVectorDB
+│      crawling.py
+│      csvToFaiss.py
+│
+├─data
+│  ├─csv
+│  │      all_laptop_data.csv
+│  │
+│  └─db
+│          faiss_index.faiss
+│          faiss_index.pkl
+│
+├─db
+├─RAG
+│      prompt.py
+│      retrieval.py
+│
+└─_
 ```
 
-<hr> 
-
-### Data
-
-***data에 대한 설명 작성***
-
-
-<hr>
-
-
-### Preprocess
-
-**수집한 데이터의 전처리 과정 정리**
-
-
-<hr>
-
-### System Architecture
-
-***프로그램의 전체적인 구성 도표 삽입 및 설명***
-
-<hr>
-
-### 수행 결과
-
-***시스템 구축 전후의 결과 비교 및 평가, 한계점 기술***
-
-<hr>
-
-### 한 줄 회고
-
-***회고 작성***
