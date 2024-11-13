@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from operator import itemgetter
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import (
@@ -7,9 +6,6 @@ from langchain_core.prompts import (
 from langchain_core.output_parsers import (
     StrOutputParser,
 )
-from langchain_openai.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_community.document_transformers import LongContextReorder
 
 
 def prompting(retriever, question=''):

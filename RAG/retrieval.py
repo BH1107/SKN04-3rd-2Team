@@ -1,8 +1,5 @@
-from langchain_openai import ChatOpenAI
 from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.chains import RetrievalQA
-
 
 def retrieve_and_answer(fetch_k=20, k=1, lambda_mult=0.3, query=''):
     db = FAISS.load_local(

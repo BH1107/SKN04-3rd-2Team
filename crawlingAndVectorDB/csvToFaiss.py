@@ -1,15 +1,8 @@
-from dotenv import load_dotenv
 import pandas as pd
 
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-import os
-
-load_dotenv()
-
-csv_read_path = os.getenv("csv_read_path")
-faiss_save_path = os.getenv("faiss_save_path")
 
 
 def laptop_data_to_faiss(csv_read_path, faiss_save_path):
@@ -33,5 +26,3 @@ def laptop_data_to_faiss(csv_read_path, faiss_save_path):
         folder_path=faiss_save_path,
         index_name='faiss_index'
     )
-
-laptop_data_to_faiss(csv_read_path,faiss_save_path)
