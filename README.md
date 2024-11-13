@@ -86,36 +86,39 @@ ChatGPT에게 노트북 추천을 요청하면 할루시네이션이 있는 내�
 |--------------------|---------------------|
 | ![BeautifulSoup](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) <img src="https://img.shields.io/badge/langchain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"><img src="https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white">| ![streamlit](https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-<br><br>
+## Requirements.txt
+### Usage
+**이 코드를 실행하기 위해 어떠한 코드를 어떻게 실행해야 하는지 작성**
 
----
-## 폴더트리
+cmd
+```
+pip install -r requirements.txt
 ```
 
-│  .env
-│  .gitignore
-│  laptops_data.csv
-│  main.py
-│  README.md
-│  streamlit.py
-│
-├─crawlingAndVectorDB
-│      crawling.py
-│      csvToFaiss.py
-│
-├─data
-│  ├─csv
-│  │      all_laptop_data.csv
-│  │
-│  └─db
-│          faiss_index.faiss
-│          faiss_index.pkl
-│
-├─db
-├─RAG
-│      prompt.py
-│      retrieval.py
-│
-└─_
-```
+## System Architecture
 
+### 프로그램의 전체적인 구성 도표 삽입 및 설명
+
+<p>
+  <img src="Images/architecture.png" alt="이미지 설명" width="500" height="350">
+</p>
+
+저희 시스템은 Selenium을 통해 크롤링한 데이터를 FAISS(Vector DB)에 임베딩하여 벡터 기반 검색을 수행합니다.   
+사용자가 Streamlit에 입력한 질문은 retriever와 체인 모델을 거쳐, 저희가 개발한 모델로 응답이 생성됩니다.   
+최종 결과는 Streamlit을 통해 사용자에게 직관적으로 제공됩니다.   
+
+## 한 줄 소감
+
+
+### 👨‍💻 김정훈
+- LangChain을 활용한 작업은 정말 흥미로웠습니다. 다양한 기능들이 유기적으로 연결되어, 복잡한 자연어 처리 작업을 효율적으로 처리할 수 있는 강력한 도구라는 생각이 들었습니다. 특히, LLM을 활용한 파이프라인 구축과 데이터 연결 작업이 매우 직관적이고 유연하게 처리되어 작업의 생산성을 크게 높일 수 있었습니다.
+
+### 👨‍💻 박병헌
+- 처음에 데이터 처리가 완료되면 금방 끝날 것 같은 작업이라고 생각했지만, 생각보다 pormpt 작업이 어렵고 생각대로 답변이 나오지 않아 많은 시간이 소요되었다. 하지만 결국 결과를 볼 수 있었고, 좋은 경험이였다.
+
+### 👩‍💻 이지수
+- LLM에 관련된 주제의 프로젝트를 경험한 것이 색다른 느낌이 들었습니다.   
+시간이 촉박하여 프로젝트를 완성도 있게 만들지 못한 점이 매우 아쉬웠습니다.
+
+### 👨‍💻 오종수
+- 새로운 도전 속에서 많은 것을 배우고 성장할 수 있었던 프로젝트였습니다
